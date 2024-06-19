@@ -1,0 +1,100 @@
+a{
+    text-decoration: none;
+}
+.profile-info{
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile-picture img{
+    max-width: 350px;
+    max-height: 350px;
+    border-radius: 20px;
+    margin-right: 30px;
+}
+
+.shoe-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+@media (max-width: 900px) {
+    .shoe-container{
+        justify-content: space-evenly;
+    }
+}
+@media (min-width: 900px) {
+    .shoe-container{
+        justify-content: center;
+    }
+}
+.shoe-container .shoe-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+    background-image: linear-gradient(rgb(177, 177, 177), rgb(255, 255, 255));
+    border-radius: 20px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.158);
+}
+@media (min-width: 900px) {
+    .shoe-container .shoe-item {
+        padding-block: 20px;
+        width: 300px;    
+        margin: 20px 20px;
+    }
+}
+@media (max-width: 900px) {
+    .shoe-container .shoe-item {
+        padding: 10px;
+        width: fit-content;    
+        margin: 20px 5px;
+    }
+}
+.shoe-container .shoe-item:hover {
+    transform: scale(1.02);
+    transition: transform 0.2s ease;
+}
+  
+.shoe-container .shoe-item:not(:hover){
+    transition: transform 0.2s ease;
+    transform: scale(1);
+}
+
+
+.shoe-container .shoe-item img {
+    margin-bottom: 10px;
+    max-width: 100%;
+    height: auto;
+    transition: transform 0.3s ease;
+    border-radius: 5%;
+    width: 230px; 
+    height: 230px;
+    overflow: hidden;
+    object-fit: cover;
+}
+
+.shoe-info{
+    color: black;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+.shoe-info-name{
+    font-size: large;
+    color: black;
+}
+.shoe-info-otherinfo{
+    font-size: medium;
+    color: black;
+}
+
+.products{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}

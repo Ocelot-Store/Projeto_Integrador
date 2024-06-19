@@ -1,0 +1,323 @@
+.user-buttons{
+    display: flex;
+    justify-content: space-evenly;
+    position: absolute;
+    right: 0px;
+    width: 300px;
+}
+
+.logout{
+    border: 2px black;
+    color: black;
+    padding: 5px;
+}
+
+.delete-user{
+    background-color: black;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+body{
+    background-color: rgba(34, 34, 34, 1);
+    color: rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.profile-picture input[type="file"] {
+    display: none;
+}
+h1{
+    font-size: 25px;
+}
+a {
+    color: white;
+}
+form{
+    height: 0px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.profile-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    width: 100%;
+}
+
+@media (max-width: 600px) {
+    .profile-picture{
+        width: 175px; /* Tamanho desejado do quadrado */
+        height: 175px; /* Tamanho desejado do quadrado */
+        overflow: hidden;
+    }
+}
+@media (min-width: 600px) {
+    .profile-picture{
+        width: 225px; /* Tamanho desejado do quadrado */
+        height: 225px; /* Tamanho desejado do quadrado */
+        overflow: hidden;
+    }
+}
+
+.profile-picture img{
+    width: 100%; /* Faz a imagem ocupar 100% da largura do contêiner */
+    height: 100%; /* Mantém a proporção original da imagem */
+    object-fit: cover;
+    border-radius:10px;
+}
+
+.empty-image{
+    background-color: #dddddd75;
+    padding: 20px;
+    border-radius:40px;
+}
+
+.empty-image:hover {
+    background-color: #dddddd;
+    transition: 0.15s ease;
+}
+  
+.empty-image:not(:hover){
+    background-color: #dddddd75;
+    transition: 0.2s ease;
+}
+
+.profile-info-text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.profile-info-text h1{
+    font-size:40px;
+}
+
+input[type="submit"]{
+    margin: 30px 0px;
+}
+input[type="submit"] {
+    background-color: white;
+    color: black;
+    font-size: large;
+    border-radius: 20px;
+    padding: 5px 10px;
+    margin-top: 30px;
+}
+
+input[type="submit"]:hover {
+    transform: scale(1.07);
+    transition: transform 0.4s ease;
+}
+  
+input[type="submit"]:not(:hover){
+    transition: transform 0.4s ease;
+    transform: scale(1);
+}
+
+
+.user-options{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.user-options a {
+    background-color: white;
+    color: black;
+    font-size: large;
+    border-radius: 20px;
+    padding: 5px 10px;
+    margin-top: 10px;
+    text-decoration: none;
+}
+
+.user-options a:hover {
+    transform: scale(1.07);
+    transition: transform 0.4s ease;
+}
+  
+.user-options a:not(:hover){
+    transition: transform 0.4s ease;
+    transform: scale(1);
+}
+
+.products{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    margin-block: 30px;
+}
+.products h1{
+    width: fit-content;
+}
+
+.shoe-container {
+    display: flex;
+    flex-wrap: wrap;
+    color: black;
+    justify-content: center;
+}
+@media (max-width: 900px) {
+    .shoe-container{
+        justify-content: space-evenly;
+    }
+}
+@media (min-width: 900px) {
+    .shoe-container{
+    }
+}
+.shoe-container .shoe-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+    background-image: linear-gradient(rgb(199, 199, 199), rgb(255, 255, 255));
+    border-radius: 20px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.158);
+}
+@media (min-width: 900px) {
+    .shoe-container .shoe-item {
+        padding-block: 20px;
+        width: 300px;    
+        margin: 20px 20px;
+    }
+}
+@media (max-width: 900px) {
+    .shoe-container .shoe-item {
+        padding: 10px;
+        width: fit-content;    
+        margin: 20px 5px;
+    }
+}
+.shoe-container .shoe-item:hover {
+    transform: scale(1.02);
+    transition: transform 0.2s ease;
+}
+  
+.shoe-container .shoe-item:not(:hover){
+    transition: transform 0.2s ease;
+    transform: scale(1);
+}
+
+
+.shoe-container .shoe-item img {
+    margin-bottom: 10px;
+    max-width: 100%;
+    height: auto;
+    transition: transform 0.3s ease;
+    border-radius: 5%;
+    width: 230px; 
+    height: 230px;
+    overflow: hidden;
+    object-fit: cover;
+}
+
+.shoe-info{
+    color: black;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+.shoe-info-name{
+    font-size: large;
+    color: black;
+}
+.shoe-info-otherinfo{
+    font-size: medium;
+    color: black;
+}
+
+
+
+.shoe-item form button{
+    background: none; /* Remove o fundo padrão do botão */
+    border: none; /* Remove a borda padrão do botão */
+    padding: 0; /* Remove o preenchimento do botão */
+    width: 60px;
+    width: 60px;
+}
+
+
+/**************************************************************************/ 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+}
+
+.container {
+    height: 100%;
+    position: relative;
+}
+
+.top-half {
+    width: 100%;
+    height: 35vh; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.top-half-img {
+    top: 0px;
+    position: absolute;
+    width: 100%;
+    height: 35%;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+.bottom-half {
+    position: absolute;
+    width: 100%;
+    top: 35%;
+    height: fit-content; 
+    background-color: rgba(34, 34, 34, 1);
+    border-top: solid 5px rgb(255, 255, 255);
+
+}
+
+:root{
+    --image-size:200px;
+    --image-space:110px;
+}
+
+form input[type="submit"]{
+    position: absolute;
+    top: 35vh; 
+    border: none; 
+    margin-top: var(--image-space);
+
+}
+.round-image {
+    position: absolute;
+    top: 35vh; 
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: var(--image-size); 
+    height: var(--image-size); 
+    border-radius: 50%;
+    border: 5px solid white; 
+    z-index: 1000;
+}
+
+.image-space{
+    height: 145px;
+}

@@ -1,0 +1,86 @@
+body{
+    background-color: white;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.heading{
+    margin-top: 20px;
+    font-size: 40px;
+    font-weight: bold;
+    text-shadow: 0px 2px 4px rgba(70, 70, 70, 0.492);
+}
+
+.text-container{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.text{
+    color:rgba(83, 83, 83, 0.873);
+    display: flex;
+    width: 30%;
+    font-size: 23px;
+    justify-content: center;
+    text-align: center;
+    margin: 15px;
+    text-shadow: 0px 2px 4px rgba(98, 98, 98, 0.492);
+}
+
+.img{
+    margin: 40px;
+    opacity: 60%;
+    border: 5px solid rgb(0, 0, 0);
+    border-radius: 50%;
+    
+}
+
+.img img{
+    padding: 30px;
+    width: 175px;
+}
+
+.turnback{
+    margin-top: 60px;
+}
+
+.turnback h1{
+    text-align: center;
+    font-size: 30px;
+    margin-top: -50px;
+}
+
+.turnback p{
+    text-align: center;
+    font-size: 30px;
+    margin-top: -43px;
+}
+.turnback a{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+}
+
+.turnback:first-child:hover {
+    transform: scale(1.1);
+    transition: transform 0.5s ease;
+}
+  
+.turnback:first-child(:hover){
+    transition: transform 0.5s ease;
+    transform: scale(1);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+table, th, td {
+    border: 1px solid black;
+    padding: 8px;
+    text-align: center;
+}
