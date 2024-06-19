@@ -81,7 +81,7 @@ include('../PHP/Connection.php');
                 <img src=\"../Assets/Cart.png\" alt=\"\">
             </div>
             <div class=\"turnback\">
-                <a href=\"ViewShoes.php\"><h1>Voltar</h1><p>_________</p></a>
+                <a href=\"ViewShoes.php\"><h1>Voltar</h1><p>________</p></a>
                 
             </div>
             

@@ -109,31 +109,34 @@ if(isset($_POST['model']) || isset($_POST['brand']) || isset($_POST['price']) ||
         include('../PHP/HorizontalMenu.php');
     ?>
     <form id="form" method="POST" enctype="multipart/form-data" action="">
-        <div class="input-box">
-            <input type="text" id="model" name="model" placeholder="Digite o modelo">
-        </div>
 
-        <div class="input-box">
-            <select name="brand" id="brand">
-                <?php $obj->displayCategories(); ?>
-            </select>
-        </div>
-
-        <div class="input-box" id="input-box-price">
-            <input type="text" id="price" name="price" placeholder="Digite o preço">
-        </div>
-        
-        <div class="input-box" id="file-input-box">
-                <input name="image_file" type="file">
-        </div>
-
-        <div class="input-box">
-            <textarea id="txtaDescription" name="txtaDescription" rows="4" cols="50" placeholder="Digite a descrição"></textarea>
-        </div>
-        
-
-        <div class="divsubmit">
-            <input name="upload" type="submit" value="Enviar" onclick="removeMaskAndSubmit()"> 
+        <div class="general">
+            <div class="inner-general">
+                <div class="name-brand">
+                    <div class="input-box">
+                        <input type="text" id="model" name="model" placeholder="Digite o modelo">
+                    </div>
+                    <div class="input-box">
+                        <select name="brand" id="brand">
+                            <?php $obj->displayCategories(); ?>
+                        </select>
+                    </div>
+                </div>
+                <div class="input-box" id="input-box-price">
+                    <input type="text" id="price" name="price" placeholder="Digite o preço">
+                </div>
+                
+                <div class="input-box" id="file-input-box">
+                        <input name="image_file" type="file">
+                </div>
+                <div class="input-box">
+                    <textarea id="txtaDescription" name="txtaDescription" rows="4" cols="50" placeholder="Digite a descrição"></textarea>
+                </div>
+                
+                <div class="divsubmit">
+                    <input name="upload" type="submit" value="Enviar" onclick="removeMaskAndSubmit()">
+                </div>
+            </div>
         </div>
     </form>
 
