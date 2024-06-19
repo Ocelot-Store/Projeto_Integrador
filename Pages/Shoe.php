@@ -33,7 +33,7 @@ if ($sql_query->num_rows > 0) {
 
         
         if (empty($userImagePath)) {
-            $userImagePath = '../Assets/BorderlessUser.png'; // Substitua pelo caminho da sua imagem padrão
+            $userImagePath = '../Assets/DarkUser.png'; // Substitua pelo caminho da sua imagem padrão
         }
     } else {
         $shoeUser = "Desconhecido(a)";
